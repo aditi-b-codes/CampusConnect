@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1e3a8a;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/* Hero Section */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #eef4ff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #172554;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.btn.secondary {
+    background-color: white;
+    color: #1e3a8a;
+    border: 2px solid #1e3a8a;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Events Section */
+
+.events {
+    padding: 70px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.events h2 {
+    font-size: 35px;
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    width: 280px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.event-card h3 {
+    color: #1e3a8a;
+    margin-top: 0;
+}
+
+.event-card p {
+    color: #475569;
+}
+
+.event-card span {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+
+/* Clubs Section */
+
+.clubs {
+    padding: 70px 50px;
+    text-align: center;
+    background-color: #eef4ff;
+}
+
+.clubs h2 {
+    font-size: 35px;
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.club-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.club-card {
+    width: 280px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.club-card h3 {
+    color: #1e3a8a;
+}
+
+.club-card p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.club-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    background-color: #1e3a8a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.club-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Registration Section */
+
+.register {
+    padding: 70px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.register h2 {
+    font-size: 35px;
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 40px auto 0;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 7px;
+    color: #334155;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* Smooth Scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile Responsive Design */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+    }
+
+    .events,
+    .clubs {
+        padding: 50px 20px;
+    }
+
+}
+/* Event Search */
+
+.event-search {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.event-search input,
+.event-search select {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.event-search input {
+    width: 300px;
+}
+
+.event-search select {
+    width: 180px;
+}
+
+
+/* Mobile Search */
+
+@media (max-width: 700px) {
+
+    .event-search {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-search input,
+    .event-search select {
+        width: 90%;
+    }
+
+}

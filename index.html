@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+
+        <h2>CampusConnect</h2>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#events">Events</a>
+            <a href="#clubs">Clubs</a>
+            <a href="#register">Register</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Discover What's Happening on Campus</h1>
+
+            <p>
+                Find events, explore clubs, and connect with opportunities
+                happening at VIT Bhopal.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#events" class="btn">
+                    Explore Events
+                </a>
+
+                <a href="#clubs" class="btn secondary">
+                    Discover Clubs
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Events Section -->
+    <section class="events" id="events">
+
+        <h2>Upcoming Events</h2>
+
+        <p class="section-subtitle">
+        Explore events happening around campus.
+        </p>
+
+
+    <!-- Event Search -->
+    <div class="event-search">
+
+        <input
+            type="text"
+            id="eventSearch"
+            placeholder="Search for an event..."
+        >
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="hackathon">
+                Hackathon
+            </option>
+
+            <option value="workshop">
+                Workshop
+            </option>
+
+            <option value="technical">
+                Technical
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="event-container">
+
+        <!-- Event 1 -->
+        <div class="event-card" data-category="hackathon">
+
+            <h3>CodeSprint Hackathon</h3>
+
+            <p>📅 15 September 2026</p>
+
+            <p>📍 VIT Bhopal</p>
+
+            <span>Hackathon</span>
+
+        </div>
+
+
+        <!-- Event 2 -->
+        <div class="event-card" data-category="workshop">
+
+            <h3>AI & ML Workshop</h3>
+
+            <p>📅 20 September 2026</p>
+
+            <p>📍 AB1 Auditorium</p>
+
+            <span>Workshop</span>
+
+        </div>
+
+
+        <!-- Event 3 -->
+        <div class="event-card" data-category="technical">
+
+            <h3>Web Development Bootcamp</h3>
+
+            <p>📅 25 September 2026</p>
+
+            <p>📍 Computer Lab</p>
+
+            <span>Technical</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- Clubs Section -->
+    <section class="clubs" id="clubs">
+
+        <h2>Explore Clubs</h2>
+
+        <p class="section-subtitle">
+            Find communities that match your interests.
+        </p>
+
+
+        <div class="club-container">
+
+            <!-- Technical Clubs -->
+            <div class="club-card">
+
+                <h3>Technical Clubs</h3>
+
+                <p>
+                    Explore coding, AI, cybersecurity, robotics and
+                    other technology-focused communities.
+                </p>
+
+                <a href="#" class="club-btn">
+                    Explore
+                </a>
+
+            </div>
+
+
+            <!-- Cultural Clubs -->
+            <div class="club-card">
+
+                <h3>Cultural Clubs</h3>
+
+                <p>
+                    Connect with students through music, dance,
+                    drama, literature and cultural activities.
+                </p>
+
+                <a href="#" class="club-btn">
+                    Explore
+                </a>
+
+            </div>
+
+
+            <!-- Creative Clubs -->
+            <div class="club-card">
+
+                <h3>Creative Clubs</h3>
+
+                <p>
+                    Discover photography, design, content creation,
+                    art and other creative communities.
+                </p>
+
+                <a href="#" class="club-btn">
+                    Explore
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Registration Section -->
+    <section class="register" id="register">
+
+        <h2>Register for an Event</h2>
+
+        <p class="section-subtitle">
+            Reserve your spot in an upcoming campus event.
+        </p>
+
+
+        <form id="registrationForm">
+
+            <!-- Name -->
+            <label for="name">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+            >
+
+
+            <!-- Email -->
+            <label for="email">
+                VIT Email
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="example@vitbhopal.ac.in"
+            >
+
+
+            <!-- Year -->
+            <label for="year">
+                Year
+            </label>
+
+            <select id="year">
+
+                <option value="">
+                    Select your year
+                </option>
+
+                <option value="1">
+                    1st Year
+                </option>
+
+                <option value="2">
+                    2nd Year
+                </option>
+
+                <option value="3">
+                    3rd Year
+                </option>
+
+                <option value="4">
+                    4th Year
+                </option>
+
+            </select>
+
+
+            <!-- Event -->
+            <label for="event">
+                Select Event
+            </label>
+
+            <select id="event">
+
+                <option value="">
+                    Choose an event
+                </option>
+
+                <option value="codesprint">
+                    CodeSprint Hackathon
+                </option>
+
+                <option value="aiml">
+                    AI & ML Workshop
+                </option>
+
+                <option value="web">
+                    Web Development Bootcamp
+                </option>
+
+            </select>
+
+
+            <!-- Submit Button -->
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+
+        <!-- JavaScript Message -->
+        <p id="message"></p>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
